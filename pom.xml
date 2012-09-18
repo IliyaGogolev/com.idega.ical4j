@@ -1,0 +1,115 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>com.idega.bedework.parent</artifactId>
+		<groupId>com.idega.block.addon</groupId>
+		<version>4.1.3-SNAPSHOT</version>
+	</parent>
+	<artifactId>com.idega.ical4j</artifactId>
+	<name>ICal4J Idega</name>
+	<description>Idega modifications for ICal4j</description>
+
+	<url>http://ical4j.sourceforge.net</url>
+
+	<issueManagement>
+		<system>SourceForge.net</system>
+		<url>https://sourceforge.net/tracker/?group_id=107024</url>
+	</issueManagement>
+	<inceptionYear>2004</inceptionYear>
+	<licenses>
+		<license>
+			<name>${pom.name} - License</name>
+			<url>${scm.url}/raw-file/tip/LICENSE</url>
+		</license>
+	</licenses>
+
+	<scm>
+		<connection>scm:hg:http://ical4j.hg.sourceforge.net:8000/hgroot/ical4j/ical4j</connection>
+		<developerConnection>scm:hg:ssh://fortuna@ical4j.hg.sourceforge.net/hgroot/ical4j/ical4j</developerConnection>
+		<url>http://ical4j.hg.sourceforge.net/hgweb/ical4j/ical4j</url>
+	</scm>
+
+	<contributors>
+		<contributor>
+			<name>Mike Douglass</name>
+			<organization>
+				Rensselaer Polytechnic Institute
+			</organization>
+			<organizationUrl>http://www.rpi.edu</organizationUrl>
+		</contributor>
+		<contributor>
+			<name>Randy Letness</name>
+			<organization>
+				Open Source Applications Foundation
+			</organization>
+			<organizationUrl>
+				http://www.osafoundation.org
+			</organizationUrl>
+		</contributor>
+		<contributor>
+			<name>Arnaud Quillaud</name>
+			<organization>Oracle Inc.</organization>
+			<organizationUrl>
+                http://www.oracle.com
+            </organizationUrl>
+		</contributor>
+	</contributors>
+
+	<dependencies>
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.5</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
+		<dependency>
+			<groupId>backport-util-concurrent</groupId>
+			<artifactId>backport-util-concurrent</artifactId>
+			<version>3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.groovy</groupId>
+			<artifactId>groovy-all</artifactId>
+			<version>1.8.5</version>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.quartz-scheduler</groupId>
+			<artifactId>quartz</artifactId>
+			<version>1.8.4</version>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>1.4</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.spockframework</groupId>
+			<artifactId>spock-core</artifactId>
+			<version>0.5-groovy-1.8</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.ccil.cowan.tagsoup</groupId>
+			<artifactId>tagsoup</artifactId>
+			<version>1.2</version>
+			<type>jar</type>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.idega.block.platform</groupId>
+			<artifactId>com.idega.core</artifactId>
+		</dependency>
+	</dependencies>
+</project>
